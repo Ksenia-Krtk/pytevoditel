@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond Medium';  
+    color: rgb(0, 0, 0);  
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Medium';
+    src: url(../Cormorant_Garamond/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Berold";
+    src: url(../berold.otf);
+}
+
+:root {
+    --pinki : #B03E9B;
+}
+
+main{
+    background-color:#F7F1E4; 
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.fon {
+    background-image: url(../image/fon_bar.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 55%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.foto {
+    background-image: url(../image/glav_bar.png);
+    position: absolute;
+    left: 25%;
+    top: 9%;
+    width: 609px;
+    height: 795px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 2;
+
+}
+
+.text {
+    margin-right: 5%;
+    width: 855px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.name {
+  font-family: "Berold";
+  font-size: 96px;
+  color: var(--pinki);
+}
+
+.name > span {
+    font-size: 98px;
+    font-family: "Berold";
+    color: var(--pinki);
+}
+
+
+section {
+    display: flex !important; 
+    flex-direction: row;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.menu {
+    color: var(--pinki);
+    text-decoration: 2px underline;
+}
+
+.menu:hover {
+    color: #752a67;
+    text-decoration: 2px underline;
+}
+
+.text > :nth-child(2){
+    margin-top: -103px;
+}
+
+.pinki {
+    color: var(--pinki);
+}
+
+.pinki span{
+    color: var(--pinki);
+}
+
+.numbers{
+    font-family: "Crimson Text", serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.next{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
